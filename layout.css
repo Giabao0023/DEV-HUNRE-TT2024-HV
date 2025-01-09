@@ -1,0 +1,389 @@
+body {
+    font-family: f'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-image: url("Images/img/header.jpg");
+    padding: 10px 0;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.header-container img {
+    height: 70px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+
+.search-bar input {
+    border: none;
+    /*utline: none; */
+    padding: 5px;
+    font-size: 16px;
+}
+
+.search-bar button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    color: #f8b400;
+}
+
+/* Định dạng chung cho nav */
+nav {
+    display: flex;
+    justify-content: space-around;
+    /* Căn đều các mục trong navbar */
+    align-items: center;
+    gap: 20px;
+    /* Khoảng cách giữa các mục */
+}
+
+/* Căn chỉnh hình ảnh và chữ trong các mục của nav */
+nav a {
+    display: flex;
+    flex-direction: column;
+    /* Xếp dọc: hình ảnh trên, chữ dưới */
+    align-items: center;
+    /* Căn giữa nội dung */
+    text-decoration: none;
+    /* Loại bỏ gạch chân */
+    color: #333;
+    /* Màu chữ */
+    font-size: 14px;
+    /* Kích thước chữ */
+    font-weight: bold;
+    /* Chữ đậm */
+    transition: color 0.3s;
+    /* Hiệu ứng đổi màu khi hover */
+}
+
+nav a img {
+    width: 20px;
+    /* Kích thước hình ảnh */
+    height: auto;
+    margin-bottom: 5px;
+    /* Khoảng cách giữa ảnh và chữ */
+}
+
+nav a:hover {
+    color: #f8b400;
+    /* Màu chữ khi hover */
+}
+
+/* Đảm bảo tính tương thích trên màn hình nhỏ */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        /* Sắp xếp các mục dọc trên màn hình nhỏ */
+    }
+
+    nav a {
+        margin-bottom: 10px;
+        /* Tăng khoảng cách giữa các mục */
+    }
+}
+
+/* nav {
+  display: flex;
+  align-items: center; 
+
+  } 
+     nav a {
+      color: #df9737  ; 
+         text-decoration: none; 
+         margin: 0 10px; 
+         font-size: 16px; 
+     }  */
+
+
+/*.login-register {
+      display: flex;
+      align-items: center;
+  } 
+  .login a {
+     color: #fff;
+      background-color: #dd8f22; 
+      padding: 5px 10px;
+       border-radius: 5px;
+        margin-left: 10px;
+         text-decoration: none;
+         
+      }
+  .register a {
+     color: #dd8f22;
+      padding: 5px 10px;
+      border-radius: 5px;
+      margin-left: 10px;
+      text-decoration: none;
+      }*/
+.use-btn {
+    background-color: transparent;
+    color: #f4a261;
+}
+
+.user-btn {
+    padding: 8px 15px;
+    border: 1px solid #f4a261;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.user-btn {
+    background-color: #f4a261;
+    color: white;
+}
+
+.use-btn {
+    padding: 8px 15px;
+    border: 1px solid #f4a261;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.banner {
+    position: relative;
+    text-align: center;
+    color: #fff;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+}
+
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.banner-text h1 {
+    font-size: 48px;
+    margin: 0;
+}
+
+.banner-text p {
+    font-size: 24px;
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+    background-color: #fff;
+}
+
+.feature-item {
+    text-align: center;
+    max-width: 150px;
+}
+
+.feature-item img {
+    width: 50px;
+    height: 50px;
+}
+
+.feature-item p {
+    margin: 10px 0 0;
+    font-size: 14px;
+}
+
+.hot-deals,
+.brand-selection {
+    padding: 20px 0;
+    background-color: #f9f9f9;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.deals-container,
+.brands-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.deal-item,
+.brand-item {
+    background-color: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 10px;
+    max-width: 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.deal-item img,
+.brand-item img {
+    width: 100%;
+    height: auto;
+}
+
+.deal-item .deal-info,
+.brand-item .brand-info {
+    padding: 10px;
+}
+
+.deal-item .deal-info p,
+.brand-item .brand-info p {
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+.deal-item .deal-info .date,
+.brand-item .brand-info .date {
+    color: #888;
+}
+
+.deal-item .deal-info .view-more,
+.brand-item .brand-info .view-more {
+    color: #f8b400;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-container div {
+    max-width: 300px;
+}
+
+.footer-container h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-container p,
+.footer-container a {
+    font-size: 14px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-container a {
+    display: block;
+    margin: 5px 0;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #222;
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+
+    .header-container,
+    .foote -container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .features {
+        flex-direction: column;
+    }
+
+    .deals-container,
+    .brands-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.brand-logos {
+    text-align: center;
+    margin: 40px 0;
+    background-color: #fff;
+}
+
+.brand-logos {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.logos-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.logos-container img {
+    max-width: 120px;
+    height: auto;
+    opacity: 0.9;
+    transition: opacity 0.3s ease;
+}
+
+.logos-container img:hover {
+    opacity: 1;
+}
+/* .user-btn {
+    background-color: #f8b400;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+} */
+
+.user-btn:hover {
+    background-color: #eaa300;
+}
+
+.view-more-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.view-more {
+    color: #f8b400;
+    text-decoration: none;
+    font-weight: bold;
+}
