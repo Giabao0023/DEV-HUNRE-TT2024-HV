@@ -1,5 +1,5 @@
 body {
-    font-family: f'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -8,6 +8,39 @@ body {
 header {
     background-image: url("Images/img/header.jpg");
     padding: 10px 0;
+}
+/*Xử lý đăng nhập*/
+.modal-content{
+    background-image: url("Images/img/header.jpg");
+    padding: 5px 0;
+}
+.modal-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80%; /* Chiều cao 100% màn hình */
+}
+.modal-body {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #ffc107; /* Màu vàng nhấn */
+    text-align: center;
+    margin-bottom: 20px;
+}
+.input-group-text {
+    background-color: #ffc107;
+    border: none;
+    color: #fff;
+    border-radius: 5px 0 0 5px; /* Làm bo tròn trái */
+}
+
+.input-group .form-control {
+    border-radius: 0 5px 5px 0; /* Làm bo tròn phải */
+}
+
+/* Icon bên trong */
+.input-group-text i {
+    font-size: 1.2rem; /* Kích thước icon */
 }
 
 .header-container {
@@ -26,7 +59,6 @@ header {
 .search-bar {
     display: flex;
     align-items: center;
-    background-color: #fff;
     border-radius: 10px;
     padding: 5px 10px;
 }
@@ -36,6 +68,7 @@ header {
     /*utline: none; */
     padding: 5px;
     font-size: 16px;
+    
 }
 
 .search-bar button {
@@ -47,7 +80,7 @@ header {
 }
 
 /* Định dạng chung cho nav */
-nav {
+.nav-item {
     display: flex;
     justify-content: space-around;
     /* Căn đều các mục trong navbar */
@@ -57,7 +90,7 @@ nav {
 }
 
 /* Căn chỉnh hình ảnh và chữ trong các mục của nav */
-nav a {
+.nav-item a {
     display: flex;
     flex-direction: column;
     /* Xếp dọc: hình ảnh trên, chữ dưới */
@@ -75,7 +108,7 @@ nav a {
     /* Hiệu ứng đổi màu khi hover */
 }
 
-nav a img {
+.nav-item a img {
     width: 20px;
     /* Kích thước hình ảnh */
     height: auto;
@@ -83,7 +116,7 @@ nav a img {
     /* Khoảng cách giữa ảnh và chữ */
 }
 
-nav a:hover {
+.nav-iem a:hover {
     color: #f8b400;
     /* Màu chữ khi hover */
 }
@@ -226,6 +259,7 @@ nav a:hover {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    
 }
 
 .deal-item,
@@ -242,6 +276,7 @@ nav a:hover {
 .brand-item img {
     width: 100%;
     height: auto;
+   
 }
 
 .deal-item .deal-info,

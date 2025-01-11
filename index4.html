@@ -14,23 +14,36 @@
             integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
             crossorigin="anonymous" referrerpolicy="no-referrer" />
             <link rel="stylesheet" href="layout.css">
-    </head>
+    </head> 
     <body>
-      <header> 
+      <header class="border-bottom border-warning border-4"> 
         <div class="header-container"> 
             <img src="Images/img/logo.png" alt="Leskin Logo"> 
-                <div class="search-bar"> <input type="text"
+                <div class="search-bar">
+                    <div class="col-5 d-flex align-items-center">
+                    <div class="row col-">
+                        <div class="input-group w-search">
+                            <input type="text" class="form-control"
+                                aria-label="Dollar amount (with dot and two decimal places)">
+                            <span class="input-group-text">
+                                <i
+                                    class="fa-solid fa-magnifying-glass"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <!-- <div class="search-bar"> <input type="text"
                     placeholder="Hôm nay bạn muốn ăn gì..."> 
                     <button><i class="fas fa-search"></i></button> 
-                    </div> 
-                    <nav class="active"> 
-                        <a href="#"><img src="Images/img/icon/stick-1-a.png" alt="">Trang chủ</a>
+                    </div>  -->
+                    <nav class="nav-item"> 
+                        <a class="text-warning " href="#"><img src="Images/img/icon/stick-1-a.png" alt="">Trang chủ</a>
                         <a href="#"><img src="Images/img/icon/stick-2-a.png" alt="">Giới thiệu</a>
                         <a href="#"><img src="Images/img/icon/stick-3-a.png" alt="">Ưu đãi</a>
                         <a href="#"><img src="Images/img/icon/stick-4-a.png" alt="">Tin tức</a>
                         <a href="#"><img src="Images/img/icon/stick-5-a.png" alt="">Liên hệ</a>
                     </nav> 
-                    <div class="navbar-actions d-flex justify-content-between align-items-center p-3">
+                    <div class="navbar-actions d-flex justify-content-between align-items-center p-3 gap-2">
                         <button class="user-btn" id="login-btn">Đăng Nhập</button>
                         <button class="use-btn">Đăng Ký</button>
                 </div>
@@ -41,25 +54,41 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="loginModalLabel">Đăng Nhập</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <img src="Images/img/logo.png" alt="">
+                    <!-- <h5 class="modal-title" id="loginModalLabel">Đăng Nhập</h5> -->
+                    <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
                 </div>
                 <div class="modal-body">
                     <form id="login-form">
                         <div class="mb-3">
-                            <label for="username" class="form-label">Tên tài khoản</label>
-                            <input type="text" class="form-control" id="username" required>
+                            <!-- <label for="username" class="form-label">Tên tài khoản</label> -->
+                            <div class="input-group">
+                                <span class="input-group-text">
+                                    <i class="fas fa-user"></i> <!-- Icon người dùng -->
+                                </span>
+                             <input type="text" class="form-control" id="username" required placeholder="Tên đăng nhập">  
                         </div>
                         <div class="mb-3">
-                            <label for="password" class="form-label">Mật khẩu</label>
-                            <input type="password" class="form-control" id="password" required>
+                            <!-- <label for="password" class="form-label">Mật khẩu</label> -->
+                            <div class="input-group">
+                                <span class="input-group-text">
+                                    <i class="fas fa-lock"></i> <!-- Icon khóa -->
+                                </span>
+                            <input type="password" class="form-control" id="password" required placeholder="Mật khẩu">
+                        </div>
                         </div>
                         <button type="submit" class="btn btn-primary w-100">Đăng Nhập</button>
+                        <div class="text-center mt-3">
+                            <a href="#" class="text-decoration-none">Quên mật khẩu?</a>
+                            <span class="mx-2"></span>
+                            <a href="#" class="text-decoration-none">Đăng ký</a>
+                        </div>
                     </form>
                 </div>
             </div>
         </div>
     </div>
+    
 
   <section class="banner">
     <div class="container">
@@ -68,8 +97,8 @@
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 3"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
@@ -100,16 +129,16 @@
     </div>
   </div>
   </section>
-  <div class="features"> 
-    <div class="feature-item"> 
+  <div class="features "> 
+    <div class="col-6 col-md-3 feature-item d-flex ju "> 
         <img src="Images/img/icon/home-icon-1.png" alt="Feature Icon"> 
             <p>HOÀN TIỀN TỚI 15% VÀO VÍ</p> 
         </div> 
-    <div class="feature-item">
+    <div class="col-6 col-md-3 feature-item ">
         <img src="Images/img/icon/home-icon-2.png" alt="Feature Icon"> 
         <p>50+ ƯU ĐÃI MỖI THÁNG</p> 
       </div> 
-      <div class="feature-item"> 
+      <div class="col-6 col-md-3 feature-item "> 
         <img src="Images/img/icon/home-icon-3.png" alt="Feature Icon"> 
         <p>ĐẶT DỊCH VỤ NHANH CHÓNG</p> 
         </div> 
@@ -117,19 +146,19 @@
         <img src="Images/img/icon/home-icon-4.png" alt="Feature Icon"> 
           <p>HƠN 22 THƯƠNG HIỆU</p> 
         </div>
-        <div class="feature-item"> 
+        <div class="col-6 col-md-3 feature-item "> 
             <img src="Images/img/icon/home-icon-5.png" alt="Feature Icon"> 
             <p>HƠN 300+ SPA LÀM ĐẸP</p> 
         </div> 
-        <div class="feature-item"> 
+        <div class="col-6 col-md-3 feature-item "> 
             <img src="Images/img/icon/home-icon-6.png" alt="Feature Icon"> 
             <p>HƠN 250+ ĐỐI TÁC</p> 
           </div> 
-          <div class="feature-item"> 
+          <div class="col-6 col-md-3 feature-item"> 
             <img src="Images/img/icon/home-icon-7.png" alt="Feature Icon"> 
             <p>HƠN 1250+ KHÁCH HÀNG</p> 
         </div> 
-        <div class="feature-item"> 
+        <div class="col-6 col-md-3 feature-item "> 
                 <img src="Images/img/icon/home-icon-8.png" alt="Feature Icon"> 
                 <p>HƠN 25 THÀNH PHỐ</p> 
             </div> 
@@ -234,7 +263,6 @@
         <a href="#" class="view-more">XEM THÊM</a>
     </div>
     <div class="brand-logos">
-       
         <div class="logos-container">
             <img src="Images/img/partner-1.png" alt="L'Oreal">
             <img src="Images/img/partner-2.png" alt="Dove">

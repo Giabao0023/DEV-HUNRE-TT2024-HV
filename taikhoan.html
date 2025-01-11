@@ -1,0 +1,266 @@
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <title>
+            Leskin Account Information
+        </title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+            crossorigin="anonymous">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+            integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <link rel="stylesheet" href="layout.css">
+        
+    </head>
+    <body>
+        <header class="border-bottom border-warning border-4"> 
+            <div class="header-container"> 
+                <img src="Images/img/logo.png" alt="Leskin Logo"> 
+                    <div class="search-bar">
+                        <div class="col-5 d-flex align-items-center">
+                        <div class="row col-">
+                            <div class="input-group w-search">
+                                <input type="text" class="form-control"
+                                    aria-label="Dollar amount (with dot and two decimal places)">
+                                <span class="input-group-text">
+                                    <i
+                                        class="fa-solid fa-magnifying-glass"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    <!-- <div class="search-bar"> <input type="text"
+                        placeholder="Hôm nay bạn muốn ăn gì..."> 
+                        <button><i class="fas fa-search"></i></button> 
+                        </div>  -->
+                        <nav class="nav-item"> 
+                            <a class="text-warning " href="#"><img src="Images/img/icon/stick-1-a.png" alt="">Trang chủ</a>
+                            <a href="#"><img src="Images/img/icon/stick-2-a.png" alt="">Giới thiệu</a>
+                            <a href="#"><img src="Images/img/icon/stick-3-a.png" alt="">Ưu đãi</a>
+                            <a href="#"><img src="Images/img/icon/stick-4-a.png" alt="">Tin tức</a>
+                            <a href="#"><img src="Images/img/icon/stick-5-a.png" alt="">Liên hệ</a>
+                        </nav> 
+                        <div class="navbar-actions d-flex justify-content-between align-items-center p-3 gap-2">
+                            <button class="user-btn" id="login-btn">Đăng Nhập</button>
+                            <button class="use-btn">Đăng Ký</button>
+                    </div>
+            </div> 
+        </header> 
+        <!-- Modal -->
+        <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <img src="Images/img/logo.png" alt="">
+                        <!-- <h5 class="modal-title" id="loginModalLabel">Đăng Nhập</h5> -->
+                        <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+                    </div>
+                    <div class="modal-body">
+                        <form id="login-form">
+                            <div class="mb-3">
+                                <!-- <label for="username" class="form-label">Tên tài khoản</label> -->
+                                <div class="input-group">
+                                    <span class="input-group-text">
+                                        <i class="fas fa-user"></i> <!-- Icon người dùng -->
+                                    </span>
+                                 <input type="text" class="form-control" id="username" required placeholder="Tên đăng nhập">  
+                            </div>
+                            <div class="mb-3">
+                                <!-- <label for="password" class="form-label">Mật khẩu</label> -->
+                                <div class="input-group">
+                                    <span class="input-group-text">
+                                        <i class="fas fa-lock"></i> <!-- Icon khóa -->
+                                    </span>
+                                <input type="password" class="form-control" id="password" required placeholder="Mật khẩu">
+                            </div>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100">Đăng Nhập</button>
+                            <div class="text-center mt-3">
+                                <a href="#" class="text-decoration-none">Quên mật khẩu?</a>
+                                <span class="mx-2"></span>
+                                <a href="#" class="text-decoration-none">Đăng ký</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header">
+            <img alt="Leskin Logo" height="50"
+                src="Images/img/logo.png" width="100" />
+            <div class="search-bar">
+                <input placeholder="Hôm nay bạn muốn ăn gì..." type="text" />
+            </div>
+            <div class="nav-links">
+                <a href="#">Trang chủ</a>
+                <a href="#"> Giới thiệu</a>
+                <a href="#">Ưu đãi</a>
+                <a href="#">Tin tức</a>
+                <a href="#">Liên hệ</a>
+            </div>
+            <div class="user-menu">
+                <button>Use Name<i class="fas fa-caret-down"></i></button>
+            </div>
+        </div>
+        <div class="container">
+            <div class="sidebar">
+                <a class="active" href="#">Thông tin cá nhân</a>
+                <a href="#">Thông tin bảo mật</a>
+                <a href="#">Thông tin ví</a>
+                <a href="#">Lịch sử giao dịch</a>
+                <a href="#">
+                    Điều khoản sử dụng
+                </a>
+                <a href="#">
+                    Hướng dẫn sử dụng
+                </a>
+                <a href="#">
+                    Đăng xuất
+                </a>
+            </div>
+            <div class="content">
+                <h2>
+                    Thông tin cá nhân
+                </h2>
+                <form>
+                    <div class="form-group">
+                        <label for="name">
+                            Họ và tên
+                        </label>
+                        <input id="name" name="name" type="text" />
+                    </div>
+                    <div class="form-group">
+                        <label for="id-number">
+                            Số CMND/CCCD
+                        </label>
+                        <input id="id-number" name="id-number" type="text" />
+                    </div>
+                    <div class="form-group">
+                        <label for="dob">
+                            Ngày sinh
+                        </label>
+                        <select id="dob-day" name="dob-day">
+                            <option value="">
+                               
+                            </option>
+                        </select>
+                        <select id="dob-month" name="dob-month">
+                            <option value="">
+                            
+                            </option>
+                        </select>
+                        <select id="dob-year" name="dob-year">
+                            <option value="">
+                                
+                            </option>
+                        </select>
+                    </div>
+                    <div class="form-group gender">
+                        <label>
+                            Giới tính
+                        </label>
+                        <input id="male" name="gender" type="radio"
+                            value="male" />
+                        <label for="male">
+                            Nam
+                        </label>
+                        <input id="female" name="gender" type="radio"
+                            value="female" />
+                        <label for="female">
+                            Nữ
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">
+                            Số điện thoại
+                        </label>
+                        <input id="phone" name="phone" type="text" />
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input id="email" name="email" type="email" />
+                    </div>
+                    <div class="form-group">
+                        <label for="address">Địa chỉ</label>
+                        <input id="address" name="address" type="text" />
+                    </div>
+                    <div class="form-group">
+                        <button class="btn" type="submit">Lưu</button>
+                    </div>
+                </form>
+                <div class="profile-pic">
+                    <img alt="Profile Picture" height="100"
+                        src="https://storage.googleapis.com/a1aa/image/csValIdxNcYEDBQiTfG5oPWgfg8iX5oeEe7CSEeBgYFF9BagC.jpg"
+                        width="100" />
+                    <button>Chọn ảnh</button>
+                    <p>
+                        Dung lượng file tối đa 1 MB
+                        <br />
+                        Định dạng: JPEG, PNG
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="brand-logos">
+       
+            <div class="logos-container">
+                <img src="Images/img/partner-1.png" alt="L'Oreal">
+                <img src="Images/img/partner-2.png" alt="Dove">
+                <img src="Images/img/partner-3.png" alt="NYX">
+                <img src="Images/img/partner-4.png" alt="Revlon">
+                <img src="Images/img/partner-5.png" alt="Benefit">
+                <img src="Images/img/partner-6.png" alt="Olay">
+            </div>
+        </div>
+        <footer class="footer"> 
+            <div class="footer-container"> 
+                <div> 
+                <h3>LIÊN HỆ</h3> 
+                <p>58 Tố Hữu, Thanh Xuân, Hà Nội</p> 
+                <p>(024) 3783.5639</p>
+                <p>info@adcvietnam.net</p> 
+                <p>www.adcvietnam.net</p> 
+            </div>
+            <div> 
+                <h3>VỀ LESKIN</h3> 
+                <a href="#">Về chúng tôi</a> 
+                <a href="#">Sứ mệnh</a> 
+                <a href="#">Tầm nhìn</a> 
+                <a href="#">Quan hệ cổ đông</a> 
+            </div> 
+            <div> 
+                <h3>TẢI APP NGAY</h3> 
+                <a href="#"><img src="Images/img/app-android.jpg" alt="Google Play"></a> 
+                <a href="#"><img src="Images/img/app-ios.jpg" alt="App Store"></a> 
+            </div> 
+            <div>
+                <h3>NEWSLETTER</h3> 
+                <p>Đăng ký để nhận ưu đãi hàng tháng</p>
+                <input type="email" placeholder="Nhập email"> 
+                <button style="background-color: #f8b400; color: #fff; border: none; padding: 5px 10px; margin-top: 10px;">
+                    Đăng ký</button> 
+                </div> 
+            </div> 
+            <div class="footer-bottom">
+            <p>© 2019 Leskin. All rights reserved.</p> 
+        </div> 
+        </footer>
+        <script
+                src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+                integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+                crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            <!-- Bootstrap -->
+            <script
+                src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+                crossorigin="anonymous"></script>
+            <!-- Tự JS -->
+             <script src="js/index.js"></script>
+
+    </body>
+</html>

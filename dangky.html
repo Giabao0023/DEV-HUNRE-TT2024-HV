@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liên hệ</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #f8e8c8;
+            padding: 10px 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        header nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header nav .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #ff8c00;
+        }
+
+        header nav .nav-links {
+            display: flex;
+            align-items: center;
+        }
+
+        header nav .nav-links a {
+            text-decoration: none;
+            color: #000;
+            margin: 0 15px;
+            font-size: 16px;
+        }
+
+        header nav .nav-links a:hover {
+            color: #ff8c00;
+        }
+
+        header nav .search {
+            display: flex;
+            align-items: center;
+        }
+
+        header nav .search input {
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+
+        header nav .account {
+            display: flex;
+            align-items: center;
+        }
+
+        header nav .account a {
+            text-decoration: none;
+            color: #000;
+            margin-left: 15px;
+            font-size: 16px;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .contact-form {
+            flex: 1 1 50%;
+            max-width: 50%;
+            padding: 20px;
+            background-color: #fff8e1;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-right: 10px;
+        }
+
+        .contact-form h2 {
+            color: #ff8c00;
+        }
+
+        .contact-form input,
+        .contact-form textarea,
+        .contact-form button {
+            width: 100%;
+            margin: 10px 0;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .contact-form button {
+            background-color: #ff8c00;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .contact-form button:hover {
+            background-color: #e67600;
+        }
+
+        .contact-info {
+            flex: 1 1 50%;
+            max-width: 50%;
+            padding: 20px;
+            background-color: #fdf2d7;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-info h2 {
+            color: #ff8c00;
+        }
+
+        .contact-info ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .contact-info ul li {
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+
+        .map {
+            margin-top: 20px;
+            width: 100%;
+            height: 300px;
+            border-radius: 5px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        footer ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 0;
+        }
+
+        footer ul li {
+            margin: 0 15px;
+        }
+
+        footer ul li img {
+            width: 40px;
+            height: 40px;
+        }
+
+       
+            .contact-form,
+            .contact-info {
+                flex: 1 1 100%;
+                max-width: 100%;
+                margin-right: 0;
+            }
+          </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">LESKIN</div>
+            <div class="nav-links">
+                <a href="#">Trang chủ</a>
+                <a href="#">Giới thiệu</a>
+                <a href="#">Ưu đãi</a>
+                <a href="#">Tin tức</a>
+                <a href="#">Liên hệ</a>
+            </div>
+            <div class="search">
+                <input type="text" placeholder="Hôm nay bạn muốn tìm gì...">
+                <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+            </div>
+            <div class="account">
+                <a href="#">Đăng nhập</a>
+                <a href="#">Đăng ký</a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="contact-form">
+            <h2>Gửi thông tin liên hệ cho chúng tôi</h2>
+            <form action="#" method="POST">
+                <input type="text" name="name" placeholder="Họ tên (*)" required>
+                <input type="email" name="email" placeholder="Email (*)" required>
+                <input type="text" name="phone" placeholder="Điện thoại (*)" required>
+                <input type="text" name="address" placeholder="Địa chỉ (*)">
+                <textarea name="message" rows="5" placeholder="Nội dung"></textarea>
+                <button type="submit">Gửi đi</button>
+            </form>
+        </div>
+
+        <div class="contact-info">
+            <h2>Thông tin liên hệ</h2>
+            <ul>
+                <li>Địa chỉ: P.1505 - A2 Tòa nhà Ecolife Capitol - 58 Tố Hữu, Thanh Xuân, Hà Nội</li>
+                <li>Điện thoại: (024) 3783.5639 - (024) 3783.5640</li>
+                <li>Fax: (024) 3.783.5641</li>
+                <li>Email: info@adcvietnam.net</li>
+                <li>Website: www.adcvietnam.net</li>
+            </ul>
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.906268072133!2d105.78820561536632!3d21.036648792898465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab3944f55555%3A0xf2d6aeb0a0f1ef06!2sEcolife%20Capitol!5e0!3m2!1sen!2s!4v1617320983442!5m2!1sen!2s" 
+                width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" class="map"></iframe>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2019 Leskin. All rights reserved.</p>
+        <ul>
+            <li><img src="loreal.png" alt="L'Oréal"></li>
+            <li><img src="dove.png" alt="Dove"></li>
+            <li><img src="nyx.png" alt="NYX"></li>
+            <li><img src="revlon.png" alt="Revlon"></li>
+            <li><img src="benefit.png" alt="Benefit"></li>
+            <li><img src="olay.png" alt="Olay"></li>
+        </ul>
+    </footer>
+</body>
+</html>
